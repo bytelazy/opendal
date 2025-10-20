@@ -127,6 +127,8 @@ pub mod observe;
 
 mod correctness_check;
 pub(crate) use correctness_check::CorrectnessCheckLayer;
+mod sanity_check;
+pub(crate) use sanity_check::SanityCheckLayer;
 mod capability_check;
 pub use capability_check::CapabilityCheckLayer;
 

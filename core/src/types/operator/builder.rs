@@ -476,6 +476,7 @@ impl<A: Access> OperatorBuilder<A> {
             .layer(ErrorContextLayer)
             .layer(CompleteLayer)
             .layer(CorrectnessCheckLayer)
+            .layer(SanityCheckLayer)
     }
 
     /// Create a new layer with static dispatch.
